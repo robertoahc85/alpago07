@@ -16,7 +16,8 @@ import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-CSRF_TRUSTED_ORIGINS = ['https://tu-dominio-en-render.com']
+CSRF_TRUSTED_ORIGINS = ['https://alpago07.onrender.com']
+
 
 
 # Quick-start development settings - unsuitable for production
