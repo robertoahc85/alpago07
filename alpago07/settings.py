@@ -28,7 +28,8 @@ SECRET_KEY = 'django-insecure-n78utx2urd@%g6x#ds!=2nkt7w8&g_ioo6ah-7vu3krk88&t(w
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://alpago07.onrender.com', 'localhost']  # Cambia '*' por el dominio de Render cuando esté disponible
+ALLOWED_HOSTS = ['alpago07.onrender.com', 'localhost']
+
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
