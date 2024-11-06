@@ -16,6 +16,7 @@ import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+CSRF_TRUSTED_ORIGINS = ['https://tu-dominio-en-render.com']
 
 
 # Quick-start development settings - unsuitable for production
@@ -27,7 +28,7 @@ SECRET_KEY = 'django-insecure-n78utx2urd@%g6x#ds!=2nkt7w8&g_ioo6ah-7vu3krk88&t(w
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']  # Cambia '*' por el dominio de Render cuando esté disponible
+ALLOWED_HOSTS = ['https://alpago07.onrender.com', 'localhost']  # Cambia '*' por el dominio de Render cuando esté disponible
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
