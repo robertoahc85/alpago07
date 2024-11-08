@@ -1,0 +1,15 @@
+{% comment %} {% extends 'base_generic.html' %} {% endcomment %}
+
+{% block content %}
+  <h2>Escuelas</h2>
+  <a href="{% url 'escuela_create' %}">Crear nueva escuela</a>
+  <ul>
+    {% for escuela in escuelas %}
+      <li>
+        <a href="{% url 'escuela_detail' pk=escuela.pk %}">{{ escuela.nombre }}</a> 
+        <a href="{% url 'escuela_edit' pk=escuela.pk %}">Editar</a> 
+        <a href="{% url 'escuela_delete' pk=escuela.pk %}">Eliminar</a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endblock %}

@@ -1,0 +1,10 @@
+{% comment %} {% extends 'base_generic.html' %} {% endcomment %}
+
+{% block content %}
+  <h2>{{ escuela.nombre }}</h2>
+  <p>Dirección: {{ escuela.direccion }}</p>
+  <p>Teléfono: {{ escuela.telefono }}</p>
+  <p>Correo: {{ escuela.correo_electronico }}</p>
+  <a href="{% url 'escuela_edit' pk=escuela.pk %}">Editar</a>
+  <a href="{% url 'escuela_delete' pk=escuela.pk %}">Eliminar</a>
+{% endblock %}

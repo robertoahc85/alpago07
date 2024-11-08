@@ -27,10 +27,10 @@ CSRF_TRUSTED_ORIGINS = ['https://alpago07.onrender.com']
 SECRET_KEY = 'django-insecure-n78utx2urd@%g6x#ds!=2nkt7w8&g_ioo6ah-7vu3krk88&t(w'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 
-ALLOWED_HOSTS = ['alpago07.onrender.com', 'localhost']
+ALLOWED_HOSTS = ['alpago07.onrender.com', '127.0.0.1']
 
 
 STATIC_URL = '/static/'

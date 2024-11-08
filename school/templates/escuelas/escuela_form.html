@@ -1,0 +1,10 @@
+{% comment %} {% extends 'base_generic.html' %} {% endcomment %}
+
+{% block content %}
+  <h2>{% if form.instance.pk %}Editar{% else %}Crear{% endif %} escuela</h2>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Guardar</button>
+  </form>
+{% endblock %}
